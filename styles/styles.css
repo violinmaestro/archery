@@ -1,5 +1,21 @@
 * {box-sizing: border-box;}
 
+.hidden {
+  position: absolute;
+  top: -10000px;
+  left: -10000px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden;
+}
+a.hidden:focus {
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
 header {
   padding: 2rem;
   background-color: #ecb722;
@@ -18,8 +34,6 @@ body {
 .business {
   margin-left: 1rem;
   padding: .5rem;
-}
-.business fa-search {
 }
 .navbar {
   overflow: hidden;
@@ -119,7 +133,7 @@ footer {
   background-attachment: fixed;
   width: 100%;
   height: auto;
-  color: white;
+  color: #FFFFE0;
 }
 .policy {
   text-align: center;
